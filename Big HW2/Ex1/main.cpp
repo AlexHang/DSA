@@ -4,11 +4,10 @@
  * and open the template in the editor.
  */
 
-/* 
+/*
  * File:   main.cpp
  * Author: dianascurtu & alexhang
  *
- * Created on 16 aprilie 2019, 18:31
  */
 
 #include <iostream>
@@ -44,21 +43,21 @@ LinkedList<camp> list;
 
 
 void citire(){
-    
+
     fin>>n;
     fin.get();
     for(int i=0; i<n; i++){
         fin.getline(ev[i].nume,21);
         ev[i].id = i;
     }
-    
+
     fin>>k;
     fin.get();
     for(int i=0; i<k; i++){
         fin.getline(p[i].nume,21);
         p[i].id = i;
     }
-    
+
 }
 
 void add(elev e, proiect p){
@@ -71,10 +70,10 @@ void add(elev e, proiect p){
 void afisare(int k){
     for(int i=1; i<=k; i++){
         //cout<<x[i]<<" "; // pentru indici
-        
-        cout<<ev[i-1].nume<<" - '"<<p[x[i]-1].nume<<"'  "; 
-        
-        add(ev[i-1],p[x[i]-1]);    
+
+        cout<<ev[i-1].nume<<" - '"<<p[x[i]-1].nume<<"'  ";
+
+        add(ev[i-1],p[x[i]-1]);
     }
 cout<<"\n";
 }
@@ -88,7 +87,7 @@ void af(T v[],int nr){ // pentru verificarea vectorilor initiali
 bool vf(int x[]){
     int viz[nmax]={0};
     int ct=0;
-    for(int i=1; i<=n; i++) 
+    for(int i=1; i<=n; i++)
         if(!viz[x[i]]) viz[x[i]]=1, ct++;
     if(ct==k) return 1;
     return 0;
@@ -144,31 +143,31 @@ void Replace(char a[], char b[]){
 
 
 int main(){
-    
+
     int ex;
     cout<<"ex: ";cin>>ex;
     citire();
-    
+
     // 1.1
     cout<<"nr. de solutii: "<<n*k<<'\n';
-    back(1); 
-    
+    back(1);
+
     if(ex==2) {// 1.2
         cout<<"\n";
         list.printList(n);
     }
-    
+
     if(ex==3) {// 1.3
         char s[20];
         cout<<"\n Sterge un elev din lista: \n";
         af(ev,n);
-        cin>>s; 
-        
+        cin>>s;
+
         Delete(s);
         cout<<"\n";
         list.printList(n);
     }
-    
+
     if(ex==4) {// 1.4
         char a[20], b[20];
         cout<<'\n';
@@ -177,11 +176,11 @@ int main(){
         cout<<"\n Inlocuieste proiectul: "; cin.getline(a,21);
         cout<<" cu proiectul: "; cin.getline(b,21);
         cout<<'\n';
-        
+
         Replace(a, b);
         list.printList(n);
     }
-    
+
     return 0;
 }
 

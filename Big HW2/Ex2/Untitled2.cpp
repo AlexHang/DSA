@@ -1,3 +1,13 @@
+/*
+
+Big Homework 2
+
+Exercise 2
+
+Diana Scurtu & Alex Hang
+
+*/
+
 #include <iostream>
 #include <fstream>
 #include <stdio.h>
@@ -135,3 +145,14 @@ int main()
 
     return 0;
 }
+
+
+/*
+
+Big Homework 2
+
+Exercise 2
+
+Diana Scurtu & Alex Hang
+
+*/

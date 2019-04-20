@@ -1,3 +1,15 @@
+
+/*
+
+Big Homework 2
+
+Exercise 3
+
+Diana Scurtu & Alex Hang
+
+*/
+
+
 #include<iostream>
 #include <list>
 #include <stack>
@@ -27,6 +39,17 @@ public:
 
     void topologicalSort();
 };
+
+
+/*
+
+Big Homework 2
+
+Exercise 3
+
+Diana Scurtu & Alex Hang
+
+*/
 
 Graph::Graph(int V){
     this->V = V;
