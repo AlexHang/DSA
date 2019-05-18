@@ -116,20 +116,22 @@ int main(){
     }
 
     //bst.inOrderTraversal();
+s
+/*
 
    BinarySearchTree<char>* b1 = bst.find('x');
    BinarySearchTree<char>* b2 = bst.find('y');
-/*
+
    cout<<"common ancestor of x and y is";
    getAncestor(b1,b2);
     cout<<endl;
 
    isGrandParent(b1,b2);
-*/
 
-//toList(b1);
 
-    bst.rotateBST();
+
+
+    bst.rotateBST();*/
 
     bst.toList();
 
@@ -155,8 +157,8 @@ int main(){
     }
 
     cout<<isPerfect(bst.root);
-
-
+/*
+*/
 
 
 
